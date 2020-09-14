@@ -37,6 +37,7 @@ header a:hover ,#home:hover{
 }
 
 #poster{
+    width: 100%;
     min-height: 400px;
     text-align: center;
     color: #ffffff;
