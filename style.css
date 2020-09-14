@@ -3,6 +3,7 @@ padding: 0;
 box-sizing: border-box;}
 html{
     font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 header{
     height: 6rem;
@@ -12,18 +13,14 @@ header{
     color: #ffffff;
     border-bottom: #a9508b 3px solid;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
     flex-wrap: wrap;
 
 
 }
-.lefthead,.righthead{
-    box-sizing: content-box;
-}
+
 header span{
     color: #a9508b;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
 }
 header ul{
     display: flex;
@@ -38,22 +35,23 @@ header a:hover ,#home:hover{
     font-weight: bolder;
     color: #929ca1;
 }
+
 #poster{
     min-height: 400px;
     text-align: center;
     color: #ffffff;
     background-image:url(./img/showcase.jpg);
     background-repeat: no-repeat;
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     align-content: center;
 
 
 }
-.poster div{
-    box-sizing: content-box;
-    min-width: 200px;
+
+#poster div{
+    /* min-width: 500px; */
+
 }
 
 #poster h1{
@@ -68,9 +66,7 @@ header a:hover ,#home:hover{
     text-align: center;
     font-size:1.4rem ;
     padding:2rem 15rem;
-    
-
-    
+       
 }
 #newsletter{
   display:flex ;
@@ -85,7 +81,6 @@ header a:hover ,#home:hover{
 
 #newsletter h1{
     font-size: 1.5rem;
-    box-sizing: content-box;
 }
 
 #newsletter button{
@@ -95,7 +90,6 @@ header a:hover ,#home:hover{
     padding: 0 20px;
     color: #ffffff;
     border: none;
-    box-sizing: content-box;
 
 }
 #newsletter input{
@@ -128,4 +122,84 @@ footer{
     color: black;
     background-color: #fffaf0;
     border-top: #a9508b 3px solid;
+}
+/* about */
+#about{
+    display: flex;
+    margin:1.5rem 3rem;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+#about-left{
+    margin-right:  1.7rem;
+    width: 50%;
+}
+#about-left p{
+    margin:0.8rem 0;
+}
+.black{
+    color: #ffffff;
+    background: #35424a;
+    padding: 1rem; 
+}
+#about-right{
+    padding: 1rem; 
+    height: max-content;
+    color: #ffffff;
+    background: #35424a; 
+    width: 25%;
+ 
+}
+#about-right h3{
+    padding: 1rem; 
+}
+/* services */
+#services{
+    display: flex;
+    margin:1.5rem 3rem;
+    justify-content: center;
+}
+#services h3{
+    margin-bottom: 1rem;
+}
+
+.services-box{
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+    padding: 2rem 1rem;
+}
+.services-right{
+    height: max-content;
+    color: #ffffff;
+    background: #35424a;
+    padding: 1rem;
+    margin: 0 2rem ;
+    width: 25%;
+}
+.services-left{
+    width: 50%;
+}
+
+.services-right button{
+    font-size: 1rem;
+    height: 38px;
+    background: #a9508b;
+    padding: 0 15px;
+    color: #ffffff;
+    border: none;
+    margin-top:9px ;
+
+}
+.services-right input{
+
+    height: 2rem;
+    margin: 10px 0;
+    width: 100%;
+}
+.services-right textarea{
+
+    margin: 10px 0;
+    width: 100%;
 }
